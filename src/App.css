@@ -149,3 +149,34 @@ nav ul li {
   width: 100vw;
   z-index: 1;
 }
+
+/* -- ABOUT ME -- */
+#about-me {
+  display: flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photo-aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+.profile-photo {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-photo {
+    width: 10rem;
+  }
+}
