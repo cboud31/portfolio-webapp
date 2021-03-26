@@ -180,3 +180,31 @@ nav ul li {
     width: 10rem;
   }
 }
+
+/* -- PORTFOLIO -- */
+#portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+  height: 75vh;
+  width: 100vw;
+}
+
+.portfolio-heading {
+  text-transform: uppercase;
+  color: var(--primary-orange);
+}
+
+.carousel-inner {
+  width: 32rem;
+}
+
+.carousel-item,
+.carousel-item > li.active {
+  height: 32rem;
+  background-color: #777;
+  position: relative;
+  width: 32rem;
+}
