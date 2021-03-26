@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+* {
+  font-family: 'Roboto Condensed';
+}
+
+/* create-react-app boilerplate CSS */
 .App {
   text-align: center;
 }
@@ -35,4 +48,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* create-react-app boilerplate CSS above... */
+
+.container {
+  display: flexbox !important;
+}
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+  color: var(--primary-white) !important;
+  align-self: center;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
