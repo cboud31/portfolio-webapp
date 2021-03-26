@@ -1,10 +1,29 @@
 import './App.css';
 import '/Users/CoryB/Desktop/2021_codingProjects/portfolioWebsite/my-app/node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import { NavBar } from './components';
+import { NavBar, Header } from './components';
+import Particles from 'react-particles-js';
 
 function App() {
-  return <NavBar />;
+  return (
+    <>
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 900,
+              },
+            },
+          },
+        }}
+      />
+      <NavBar />
+      <Header />
+    </>
+  );
 }
 
 export default App;

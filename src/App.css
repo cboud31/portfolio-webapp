@@ -4,6 +4,8 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 * {
@@ -51,6 +53,9 @@
 }
 
 /* create-react-app boilerplate CSS above... */
+nav {
+  z-index: 2;
+}
 
 .container {
   display: flexbox !important;
@@ -82,4 +87,65 @@ nav ul li {
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/* HEADER */
+.header-wrapper {
+  position: relative;
+  background: linear-gradient(0deg, #00000088 100%, #ffffff44 100%),
+    url(/Users/CoryB/Desktop/2021_codingProjects/portfolioWebsite/my-app/src/laptop-desk-coffee-music-cookie.jpeg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+/* TYPED TEXT */
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+.button-main {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.button-main:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: vaar(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/* -- PARTICLES -- */
+
+#tsparticles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
