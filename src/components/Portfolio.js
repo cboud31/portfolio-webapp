@@ -1,4 +1,5 @@
 import React from 'react';
+import graceShopper from '/Users/CoryB/Desktop/2021_codingProjects/portfolioWebsite/my-app/src/graceShopper.png';
 
 const Portfolio = () => {
   return (
@@ -21,17 +22,14 @@ const Portfolio = () => {
 
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div class="container">
-              <img
-                src={'my-app/src/Screen Shot 2021-03-25 at 1.30.37 PM.png'}
-                alt="grace-shopper"
-              />
-              <h1>Example Headline</h1>
+            <h1>Mango Record Store</h1>
+            <div className="container">
+              <img id="graceShopper" src={graceShopper} alt="grace-shopper" />
               <p>Lorem ipsum gypsum </p>
             </div>
           </div>
           <div className="carousel-item">
-            <div class="container">
+            <div className="container">
               <h1>Example Headline 2</h1>
               <p>Lorem ipsum gypsum </p>
             </div>
