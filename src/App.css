@@ -10,6 +10,9 @@
 
 * {
   font-family: 'Roboto Condensed';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* create-react-app boilerplate CSS */
@@ -179,4 +182,71 @@ nav ul li {
   .profile-photo {
     width: 10rem;
   }
+}
+
+/* -- PORTFOLIO -- */
+
+#Carousel {
+  background: #777;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.carousel-item {
+  height: 38rem;
+  background: #777;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-indicators {
+  margin-top: 3rem;
+}
+
+.container {
+  padding-bottom: 3rem;
+}
+
+#item-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#photo {
+  width: 35vw;
+  height: 40vh;
+  margin: 5rem;
+}
+
+#p {
+  width: 35vw;
+  height: 35vh;
+  margin: 5rem;
+}
+
+#photo-gs {
+  width: 16rem;
+  border-radius: 2%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-orange);
 }

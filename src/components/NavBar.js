@@ -7,9 +7,6 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Cory Boudreaux
-        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -37,6 +34,11 @@ const NavBar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#">
                 Portfolio
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Experience
               </a>
             </li>
             <li className="nav-item">
