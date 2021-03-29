@@ -1,10 +1,38 @@
 import React from 'react';
+import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+
 import graceShopper from '/Users/CoryB/Desktop/2021_codingProjects/portfolioWebsite/my-app/src/graceShopper.png';
+
+import Project from './Project';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
 
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 450,
+    fontFamily: 'Roboto Condensed',
+  },
+  media: {
+    height: 240,
+  },
+});
+
 const Portfolio = () => {
+  const classes = useStyles();
+
   return (
     <div id="Carousel" className="carousel slide" data-ride="carousel">
       <h1 className="portfolio-heading">Portfolio</h1>
@@ -13,37 +41,108 @@ const Portfolio = () => {
         <li data-target="#Carousel" data-slide-to="1"></li>
       </ol>
       <div className="carousel-inner">
-        {/* Re-Factor below over mapped Project Component */}
         <div className="carousel-item active">
           <div className="container" id="item-container">
-            <div className="item-body">
-              <img src={graceShopper} alt="project" id="photo" />
-              <span>
-                <h2>Grace Shopper</h2>
-                <ul>
-                  <li>Description of project</li>
-                  <li>Technology Stack:</li>
-                </ul>
-              </span>
-            </div>
-            <span>
-              <GitHubIcon fontSize="large" />
-              <OpenInBrowserIcon fontSize="large" />
-            </span>
+            <Card className={classes.root}>
+              <CardMedia
+                className={classes.media}
+                image={graceShopper}
+                title="Contemplative Reptile"
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h1"
+                  style={{ font: 'Roboto Condensed' }}
+                >
+                  Mango Record Store
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  <List>
+                    <ListItem>
+                      <ListItemText>
+                        Fullstack e-commerce web app where users can browse and
+                        purchase vinyl records.
+                      </ListItemText>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText>
+                        Technology Stack: PostgreSQL, Express, React, Node.js
+                      </ListItemText>
+                    </ListItem>
+                  </List>
+                </Typography>
+              </CardContent>
+              <CardActionArea>
+                <CardActions>
+                  <Link href="https://github.com/2007-LSU-WEB-PT-Mango/Grace-Shopper">
+                    <Button size="small" color="primary">
+                      GitHub
+                    </Button>
+                  </Link>
+                  <Link href="https://mangorecordshop.herokuapp.com">
+                    <Button size="small" color="primary">
+                      Heroku
+                    </Button>
+                  </Link>
+                </CardActions>
+              </CardActionArea>
+            </Card>
           </div>
         </div>
+
+        {/* Re-Factor below over mapped Project Component */}
         {/* Item 2 */}
+
         <div className="carousel-item">
           <div className="container" id="item-container">
-            <h1>Fitness Tracker</h1>
-            <div className="item-body">
-              <p>Lorem ipsum...</p>
-              <p>Even more lorem ipsum...</p>
-            </div>
-            <span>
-              <GitHubIcon fontSize="large" />
-              <OpenInBrowserIcon fontSize="large" />
-            </span>
+            <Card className={classes.root}>
+              <CardMedia
+                className={classes.media}
+                image={graceShopper}
+                title="Contemplative Reptile"
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h1"
+                  style={{ font: 'Roboto Condensed' }}
+                >
+                  Mango Record Store
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  <List>
+                    <ListItem>
+                      <ListItemText>
+                        Fullstack e-commerce web app where users can browse and
+                        purchase vinyl records.
+                      </ListItemText>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemText>
+                        Technology Stack: PostgreSQL, Express, React, Node.js
+                      </ListItemText>
+                    </ListItem>
+                  </List>
+                </Typography>
+              </CardContent>
+              <CardActionArea>
+                <CardActions>
+                  <Link href="https://github.com/2007-LSU-WEB-PT-Mango/Grace-Shopper">
+                    <Button size="small" color="primary">
+                      GitHub
+                    </Button>
+                  </Link>
+                  <Link href="https://mangorecordshop.herokuapp.com">
+                    <Button size="small" color="primary">
+                      Heroku
+                    </Button>
+                  </Link>
+                </CardActions>
+              </CardActionArea>
+            </Card>
           </div>
         </div>
       </div>

@@ -243,3 +243,10 @@ nav ul li {
   height: 35vh;
   margin: 5rem;
 }
+
+#photo-gs {
+  width: 16rem;
+  border-radius: 2%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-orange);
+}
