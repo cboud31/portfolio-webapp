@@ -1,7 +1,14 @@
 import './App.css';
 import '/Users/CoryB/Desktop/2021_codingProjects/portfolioWebsite/my-app/node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import { NavBar, Header, AboutMe, Portfolio, Experience } from './components';
+import {
+  NavBar,
+  Header,
+  AboutMe,
+  Portfolio,
+  Experience,
+  Contact,
+} from './components';
 import Particles from 'react-particles-js';
 
 function App() {
@@ -25,6 +32,7 @@ function App() {
       <AboutMe />
       <Portfolio />
       <Experience />
+      <Contact />
     </>
   );
 }
