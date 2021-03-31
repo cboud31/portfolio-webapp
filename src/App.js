@@ -8,6 +8,7 @@ import {
   Portfolio,
   Experience,
   Contact,
+  Footer,
 } from './components';
 import Particles from 'react-particles-js';
 
@@ -33,6 +34,7 @@ function App() {
       <Portfolio />
       <Experience />
       <Contact />
+      <Footer />
     </>
   );
 }

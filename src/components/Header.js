@@ -1,10 +1,11 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   const roles = ['Web Developer', 'Software Engineer'];
   return (
-    <div className="header-wrapper">
+    <div className="header-wrapper" id="home">
       <div className="main-info">
         <h1>Cory Boudreaux</h1>
         <Typed
