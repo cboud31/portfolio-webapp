@@ -102,7 +102,7 @@ nav ul li {
       no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -315,6 +315,11 @@ nav ul li {
 }
 
 .timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: var(--primary-red);
+  font-weight: 900;
+}
+.timeline-content h4 {
   margin-top: 0.3125rem;
   color: var(--primary-red);
   font-weight: 900;

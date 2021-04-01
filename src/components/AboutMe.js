@@ -1,7 +1,20 @@
 import React from 'react';
 import profilePhoto from '/Users/CoryB/Desktop/2021_codingProjects/portfolioWebsite/my-app/src/FB_Picture.jpeg';
 
-const text = `You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.`;
+const text = [
+  {
+    msg: `I'm a software developer with a passion for testing personal limits and re-defining capabilities.`,
+  },
+  {
+    msg: `My previous professional experience in journalism as well as the oil & gas industry has provided me with nearly a decade of experience in navigating high-pressure, team-driven challenges that require constant collaboration and attention to detail.`,
+  },
+  {
+    msg: `In the wake of the COVID-19 pandemic I was laid off from my job in the oilfield; the ensuing lockdown provided an opportunity to transform my side hobby of web development into a professional pursuit. I enrolled in Fullstack Academy's online immersive bootcamp, a 26-week program focused on JavaScript, HTML & CSS fundamentals as well as popular web technologies like React, PostgreSQL and Node.js.`,
+  },
+  {
+    msg: `I'm eager to join a company where I can push my creative boundaries and work in a collaborative environment centered around the goal of identifying and improving inefficiencies in everyday life.`,
+  },
+];
 
 const AboutMe = () => {
   return (
@@ -14,7 +27,11 @@ const AboutMe = () => {
         </div>
         <div className="col-lg-6 col-xm-12">
           <h1 className="about-heading">About Me</h1>
-          <p>{text}</p>
+          <span className="bio">
+            {text.map((p) => (
+              <p>{p.msg}</p>
+            ))}
+          </span>
         </div>
       </div>
     </div>

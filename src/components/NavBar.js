@@ -23,27 +23,27 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link to="home" smooth className="nav-link" href="#">
+              <Link to="home" smooth className="nav-link">
                 Home <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="about" smooth className="nav-link" href="#">
+              <Link to="about" smooth className="nav-link" offset={-110}>
                 About Me
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="Carousel" smooth className="nav-link" href="#">
+              <Link to="Carousel" smooth className="nav-link" offset={-110}>
                 Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="experience" smooth className="nav-link" href="#">
+              <Link to="experience" smooth className="nav-link" offset={-110}>
                 Experience
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="contact" smooth className="nav-link" href="#">
+              <Link to="contact" smooth className="nav-link" offset={-110}>
                 Contact Me
               </Link>
             </li>

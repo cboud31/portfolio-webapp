@@ -5,6 +5,7 @@ import {
   LinkedinIcon,
   LinkedinShareButton,
 } from 'react-share';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -25,15 +26,26 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
+                <Link className="footer-nav" to="home" smooth>
+                  Home
+                </Link>
+
                 <br />
-                <a className="footer-nav">About Me</a>
+                <Link className="footer-nav" to="about" smooth>
+                  About Me
+                </Link>
                 <br />
-                <a className="footer-nav">Portfolio</a>
+                <Link className="footer-nav" to="portfolio" smooth>
+                  Portfolio
+                </Link>
                 <br />
-                <a className="footer-nav">Experience</a>
+                <Link className="footer-nav" to="experience" smooth>
+                  Experience
+                </Link>
                 <br />
-                <a className="footer-nav">Contact Me</a>
+                <Link className="footer-nav" to="contact" smooth>
+                  Contact
+                </Link>
               </div>
             </div>
           </div>

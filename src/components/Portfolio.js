@@ -76,12 +76,18 @@ const Portfolio = () => {
               </CardContent>
               <CardActionArea>
                 <CardActions>
-                  <Link href="https://github.com/2007-LSU-WEB-PT-Mango/Grace-Shopper">
+                  <Link
+                    href="https://github.com/2007-LSU-WEB-PT-Mango/Grace-Shopper"
+                    target="_blank"
+                  >
                     <Button size="small" color="primary">
                       GitHub
                     </Button>
                   </Link>
-                  <Link href="https://mangorecordshop.herokuapp.com">
+                  <Link
+                    href="https://mangorecordshop.herokuapp.com"
+                    target="_blank"
+                  >
                     <Button size="small" color="primary">
                       Heroku
                     </Button>

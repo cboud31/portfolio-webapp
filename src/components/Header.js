@@ -3,7 +3,12 @@ import Typed from 'react-typed';
 import { Link } from 'react-scroll';
 
 const Header = () => {
-  const roles = ['Web Developer', 'Software Engineer'];
+  const roles = [
+    'Web Developer',
+    'Software Engineer',
+    'Musician',
+    'Kettlebell Athlete',
+  ];
   return (
     <div className="header-wrapper" id="home">
       <div className="main-info">
