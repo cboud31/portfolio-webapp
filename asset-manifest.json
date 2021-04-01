@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio-webapp/static/css/main.3359a6a5.chunk.css",
+    "main.js": "/portfolio-webapp/static/js/main.413b3bd1.chunk.js",
+    "main.js.map": "/portfolio-webapp/static/js/main.413b3bd1.chunk.js.map",
+    "runtime-main.js": "/portfolio-webapp/static/js/runtime-main.5ed8f765.js",
+    "runtime-main.js.map": "/portfolio-webapp/static/js/runtime-main.5ed8f765.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/portfolio-webapp/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.7906db2b.chunk.js": "/portfolio-webapp/static/js/2.7906db2b.chunk.js",
+    "static/js/2.7906db2b.chunk.js.map": "/portfolio-webapp/static/js/2.7906db2b.chunk.js.map",
+    "static/js/3.87bfa8dc.chunk.js": "/portfolio-webapp/static/js/3.87bfa8dc.chunk.js",
+    "static/js/3.87bfa8dc.chunk.js.map": "/portfolio-webapp/static/js/3.87bfa8dc.chunk.js.map",
+    "index.html": "/portfolio-webapp/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/portfolio-webapp/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.3359a6a5.chunk.css.map": "/portfolio-webapp/static/css/main.3359a6a5.chunk.css.map",
+    "static/js/2.7906db2b.chunk.js.LICENSE.txt": "/portfolio-webapp/static/js/2.7906db2b.chunk.js.LICENSE.txt",
+    "static/media/FB_Picture.fe8fa0e9.jpeg": "/portfolio-webapp/static/media/FB_Picture.fe8fa0e9.jpeg",
+    "static/media/graceShopper.51cac200.png": "/portfolio-webapp/static/media/graceShopper.51cac200.png",
+    "static/media/App.css": "/portfolio-webapp/static/media/laptop-desk-coffee-music-cookie.861aea07.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ed8f765.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.7906db2b.chunk.js",
+    "static/css/main.3359a6a5.chunk.css",
+    "static/js/main.413b3bd1.chunk.js"
+  ]
+}
