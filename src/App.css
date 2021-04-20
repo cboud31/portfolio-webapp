@@ -64,14 +64,27 @@ nav {
 
 .container {
   display: flexbox !important;
+  justify-content: center;
 }
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 
+#navbarSupportedContent {
+  /* Parent div of ul links */
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
 nav ul li {
   text-transform: uppercase;
+  align-self: center;
 }
 
 .navbar-nav > li > a {
@@ -92,6 +105,11 @@ nav ul li {
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
 }
 
 /* HEADER */

@@ -31,19 +31,24 @@ const Footer = () => {
                 </Link>
 
                 <br />
-                <Link className="footer-nav" to="about" smooth>
+                <Link className="footer-nav" to="about" smooth offset={-110}>
                   About Me
                 </Link>
                 <br />
-                <Link className="footer-nav" to="portfolio" smooth>
+                <Link className="footer-nav" to="Carousel" smooth offset={-110}>
                   Portfolio
                 </Link>
                 <br />
-                <Link className="footer-nav" to="experience" smooth>
+                <Link
+                  className="footer-nav"
+                  to="experience"
+                  smooth
+                  offset={-100}
+                >
                   Experience
                 </Link>
                 <br />
-                <Link className="footer-nav" to="contact" smooth>
+                <Link className="footer-nav" to="contact" smooth offset={-100}>
                   Contact
                 </Link>
               </div>
